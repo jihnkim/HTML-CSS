@@ -1,0 +1,40 @@
+ <!-- dfn, abbr, cite 는 모두 inline tag이다 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dfn, abbr, cite</title>
+    <style>
+        /* 배경색 넣는거임 */
+        /* 배경을 넣어보면 블록은 끝까지, 인라인은 글자만 배경이 들어가는것을 알 수 있음 */
+        p, span{background-color: aqua;}
+    </style>
+</head>
+<body>
+    
+<!-- p tag는 줄이 바뀌는 블록태그 -->
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<!-- span tag는 줄이 바뀌지 않는 inline tag -->
+<span>Lorem ipsum dolor sit amet.</span>
+<span>Lorem ipsum dolor sit amet.</span>
+<span>Lorem ipsum dolor sit amet.</span>
+
+<!-- dfn tag의 사용.. 글자의 짧은 의미를 담음-->
+<p><dfn title="하이퍼 텍스트 마크업 랭귀지 이다.">HTML</dfn></p>
+
+<!-- abbr tag의 사용.. 축약어를 사용할 때 -->
+<p>월드 와이드 웹 컨소시움(<abbr title="World Wied Web Consortium">W3C</abbr>)</p>
+
+<!-- cite tag의 사용.. 작품의 제목 표현 -->
+<p><cite>시차</cite> 우원재</p>
+
+<!-- small tag의 사용.. 스몰 프린트 같은 사이드 코멘트 -->
+<p>값 : 50000원 <small>(부가세 별도)</small></p>
+
+</body>
+</html>
